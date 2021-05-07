@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  max-width: 70%;
+  margin: 9% auto;
+  padding: 0;
+  font-family: "Inter", "Lexend Deca", sans-serif;
+}
+
+.content,
+.image {
+  width: 900px;
+}
+
+.content {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color:hsl(244, 44%, 21%);
+}
+
+header {
+    padding-top: 4.5rem;
+    padding-left: 3.1rem;
+    padding-right: 5rem;
+    
+}
+
+header h1 {
+  font-weight: 700;
+  color: rgba(238, 231, 231, 0.842);
+}
+
+header p {
+  padding-top: 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+  color: hsla(0, 0%, 100%, 0.548);
+}
+
+header span.header-bold {
+  color: rgba(126, 65, 126, 0.836);
+}
+
+.image {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color:hsla(277, 90%, 38%, 0.788);
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  opacity: 0.5;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-right: 150px;
+}
+
+footer .stat h3 {
+  font-size: 1.26rem;
+  font-weight: 700;
+  color: rgba(238, 231, 231, 0.966);
+}
+
+footer .stat p {
+  color: rgba(255, 255, 255, 0.233);
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-size: 0.65rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+body{
+  flex-direction: column-reverse;
+  flex-basis: baseline;
+  max-width: 72.5vw;
+}
+
+.content, .image {
+  max-width: 72.5vw;
+}
+
+
+.image {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  height: 200px;
+  background-color:hsla(277, 90%, 38%, 0.788);
+}
+
+img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+}
+
+.content {
+  text-align: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+font-size: 1.6rem;
+}
+
+header p {
+  font-size: 0.95rem;
+  line-height: 1.4rem;
+  color: hsla(0, 0%, 100%, 0.37);
+}
+
+footer {
+  display: block;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+footer .stat {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer .stat p {
+  color: rgba(255, 255, 255, 0.26);
+}
+
+}
